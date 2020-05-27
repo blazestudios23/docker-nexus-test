@@ -1,0 +1,36 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "graphql-nexus/examples",
+  "dependencies": {
+    "nexus": "^0.22.0"
+  },
+  "devDependencies": {
+    "@types/jest": "25.2.2",
+    "jest": "26.0.1",
+    "prettier": "2.0.5",
+    "ts-jest": "26.0.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "start": "node node_modules/.build",
+    "build": "nexus build",
+    "generate": "nexus generate",
+    "dev": "nexus dev",
+    "test": "jest"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "description": "Example"
+}
